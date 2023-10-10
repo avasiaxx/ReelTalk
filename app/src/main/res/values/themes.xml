@@ -1,8 +1,21 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.ReelTalk" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.ReelTalk"
+        parent="Theme.Material3.DayNight.NoActionBar">
+
         <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="android:colorBackground">@color/colorSecondary</item>
+
+        <item name="android:statusBarColor">#00000000</item>
+        <item name="android:fontFamily">@values/font_family</item>
     </style>
 
-    <style name="Theme.ReelTalk" parent="Base.Theme.ReelTalk" />
+    <!-- Custom style for TextView with custom font -->
+    <style name="TitleH1">
+        <item name="android:fontFamily">@font/font_family/avenir_next_bold</item>
+        <item name="android:textSize">34sp</item>
+        <item name="android:textColor">@color/highEmphasis</item>
+        <item name="android:letterSpacing">-.5</item>
+    </style>
+
 </resources>

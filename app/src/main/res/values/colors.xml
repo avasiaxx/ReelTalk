@@ -5,4 +5,13 @@
 
     <color name="colorPrimary">#FFA724</color>
     <color name="colorSecondary">#222222</color>
+
+    <color name="firstSurface">#2D2D2D</color>
+    <color name="secondSurface">#3D3D3D</color>
+    <color name="thirdSurface">#454545</color>
+
+
+    <color name="highEmphasis">#272727</color>
+    <color name="mediumEmphasis">#666666</color>
+    <color name="disabled">#9E9E9E</color>
 </resources>
