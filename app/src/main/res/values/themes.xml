@@ -7,15 +7,45 @@
         <item name="android:colorBackground">@color/colorSecondary</item>
 
         <item name="android:statusBarColor">#00000000</item>
-        <item name="android:fontFamily">@values/font_family</item>
+
     </style>
 
-    <!-- Custom style for TextView with custom font -->
+    <!-- Custom styles for TextViews with custom font -->
+    <!-- TITLES -->
     <style name="TitleH1">
-        <item name="android:fontFamily">@font/font_family/avenir_next_bold</item>
+        <item name="android:fontFamily">@font/avenir_next_bold</item>
         <item name="android:textSize">34sp</item>
         <item name="android:textColor">@color/highEmphasis</item>
-        <item name="android:letterSpacing">-.5</item>
+        <item name="android:letterSpacing">-0.005</item>
+    </style>
+    <style name="TitleH2">
+        <item name="android:fontFamily">@font/avenir_next_bold</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:textColor">@color/highEmphasis</item>
+        <item name="android:letterSpacing">-0.005</item>
+    </style>
+
+    <style name="TitleH3">
+        <item name="android:fontFamily">@font/avenir_next_bold</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/highEmphasis</item>
+        <item name="android:letterSpacing">-0.005</item>
+    </style>
+
+    <style name="Headline">
+        <item name="android:fontFamily">@font/avenir_next_regular</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/highEmphasis</item>
+        <item name="android:letterSpacing">0.002</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="BodyText">
+        <item name="android:fontFamily">@font/avenir_next_regular</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/mediumEmphasis</item>
+        <item name="android:letterSpacing">0.002</item>
+        <item name="android:textStyle">bold</item>
     </style>
 
 </resources>

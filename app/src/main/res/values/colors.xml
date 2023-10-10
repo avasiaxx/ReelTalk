@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
-
     <color name="colorPrimary">#FFA724</color>
     <color name="colorSecondary">#222222</color>
 
@@ -11,7 +8,7 @@
     <color name="thirdSurface">#454545</color>
 
 
-    <color name="highEmphasis">#272727</color>
-    <color name="mediumEmphasis">#666666</color>
-    <color name="disabled">#9E9E9E</color>
+    <color name="highEmphasis">#DDFFFFFF</color>
+    <color name="mediumEmphasis">#99FFFFFF</color>
+    <color name="disabled">#61FFFFFF</color>
 </resources>
