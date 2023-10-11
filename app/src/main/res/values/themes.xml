@@ -21,7 +21,7 @@
         <item name="android:fontFamily">@font/avenir_next_bold</item>
         <item name="android:textSize">28sp</item>
         <item name="android:textColor">@color/highEmphasis</item>
-        <item name="android:letterSpacing">-0.005</item>
+        <item name="android:letterSpacing">0.008</item>
     </style>
 
     <style name="TitleH3">
@@ -59,6 +59,13 @@
         <item name="android:textSize">13sp</item>
         <item name="android:textColor">@color/mediumEmphasis</item>
         <item name="android:letterSpacing">0.002</item>
+    </style>
+
+    <style name="PreText">
+        <item name="android:fontFamily">@font/avenir_next_regular</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">@color/mediumEmphasis</item>
+        <item name="android:letterSpacing">0.02</item>
     </style>
 
 

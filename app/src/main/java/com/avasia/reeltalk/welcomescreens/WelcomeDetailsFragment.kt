@@ -9,6 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import androidx.viewpager2.widget.ViewPager2
 import com.avasia.reeltalk.R
 import com.avasia.reeltalk.databinding.FragmentWelcomeDetailsBinding
@@ -83,5 +84,9 @@ class WelcomeDetailsFragment: Fragment(R.layout.fragment_welcome_details) {
                 }
             }
         })
+
+        continueBtn.setOnClickListener{
+            findNavController().navigate(R.id.profileFragment)
+        }
     }
 }

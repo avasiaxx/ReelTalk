@@ -9,4 +9,10 @@
     <string name="discover_and_discuss_your_favorite_films_n_movies_and_shows">Discover and discuss your favorite films,\n movies, and shows</string>
     <string name="let_s_get_started">Let\'s get started!</string>
     <string name="image">Image</string>
+    <string name="your_profile">Your profile</string>
+    <string name="display_name">Display name</string>
+    <string name="your_display_name_will_be_visible_to_other_users">Your display name will be visible to other users.</string>
+    <string name="your_birthday">Your birthday</string>
+    <string name="your_birthday_will_be_used_to_tailor_our_content_for_you_n_it_won_t_be_shared_with_any_third_parties">Your birthday will be used to tailor our content for you.\n It won\'t be shared with any third parties.</string>
+    <string name="k">K</string>
 </resources>

@@ -57,4 +57,7 @@ dependencies {
     //ViewPager2 & Dot Indicator
     implementation(libs.viewpager2)
     implementation(libs.dotsindicator)
+
+    //Circle Image View
+    implementation(libs.circleimageview)
 }
