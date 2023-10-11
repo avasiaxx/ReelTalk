@@ -10,8 +10,7 @@
 
     </style>
 
-    <!-- Custom styles for TextViews with custom font -->
-    <!-- TITLES -->
+    <!-- Custom styles (Text Appearances) for TextViews with custom font -->
     <style name="TitleH1">
         <item name="android:fontFamily">@font/avenir_next_bold</item>
         <item name="android:textSize">34sp</item>
@@ -48,7 +47,28 @@
         <item name="android:textStyle">bold</item>
     </style>
 
-    <style name="MaterialButtonStyle" parent="Widget.MaterialComponents.Button.UnelevatedButton">
+    <style name="Subheadline">
+        <item name="android:fontFamily">@font/avenir_next_regular</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/mediumEmphasis</item>
+        <item name="android:letterSpacing">0.002</item>
+    </style>
+
+    <style name="SmallText">
+        <item name="android:fontFamily">@font/avenir_next_regular</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/mediumEmphasis</item>
+        <item name="android:letterSpacing">0.002</item>
+    </style>
+
+
+    <!-- Custom styles for Material Buttons -->
+    <style name= "MaterialButtonStyle" parent="Widget.MaterialComponents.Button.UnelevatedButton">
+        <item name="android:textColor">@color/colorSecondary</item>
+        <item name="android:textAppearance">@style/Headline</item>
+    </style>
+
+    <style name="MaterialButtonStyleDisabled" parent="Widget.MaterialComponents.Button.UnelevatedButton">
         <item name="backgroundTint">@color/color_states_materialbutton</item>
     </style>
 </resources>

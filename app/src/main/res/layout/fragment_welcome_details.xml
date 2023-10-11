@@ -15,12 +15,26 @@
         android:layout_marginTop="100dp"/>
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/continueBtn"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:padding="10dp"
         app:layout_constraintBottom_toBottomOf="@id/viewpager"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:text="Continue"
+        android:text="@string/continueText"
         android:enabled="false"
-        style="@style/MaterialButtonStyle"/>
+        style="@style/MaterialButtonStyle"
+        />
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/already_have_an_account_login"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/continueBtn"
+        style="@style/Headline"
+        android:textColor="@color/highEmphasis"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

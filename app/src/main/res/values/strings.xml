@@ -3,4 +3,6 @@
     <string name="logo">Logo</string>
     <string name="reel_talk">REEL TALK</string>
     <string name="welcome">Welcome</string>
+    <string name="continueText">Continue</string>
+    <string name="already_have_an_account_login">Already have an account? Login</string>
 </resources>
