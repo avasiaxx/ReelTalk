@@ -49,4 +49,7 @@ dependencies {
     //Android Navigation
     implementation(libs.navigation.fragment)
     implementation(libs.navigation.ui)
+
+    //ViewPager2
+    implementation(libs.viewpager2)
 }
