@@ -54,6 +54,7 @@ dependencies {
     implementation(libs.navigation.fragment)
     implementation(libs.navigation.ui)
 
-    //ViewPager2
+    //ViewPager2 & Dot Indicator
     implementation(libs.viewpager2)
+    implementation(libs.dotsindicator)
 }

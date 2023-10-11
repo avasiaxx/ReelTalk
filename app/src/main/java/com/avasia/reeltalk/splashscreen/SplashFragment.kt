@@ -2,6 +2,7 @@ package com.avasia.reeltalk.splashscreen
 
 import android.os.Bundle
 import android.os.Handler
+import android.os.Looper
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -22,7 +23,8 @@ class SplashFragment : Fragment() {
     //Delay then navigate to next fragment
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        Handler().postDelayed({
+
+        Handler(Looper.getMainLooper()).postDelayed({
             findNavController().navigate(R.id.welcomeDetailsFragment)
         }, SPLASH_DELAY)
     }

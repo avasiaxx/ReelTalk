@@ -5,4 +5,8 @@
     <string name="welcome">Welcome</string>
     <string name="continueText">Continue</string>
     <string name="already_have_an_account_login">Already have an account? Login</string>
+    <string name="welcome_to_reel_talk_a_community_designed_for_true_film_and_tv_show_fans">Welcome to Reel Talk, a community\n designed for true film and TV Show fans</string>
+    <string name="discover_and_discuss_your_favorite_films_n_movies_and_shows">Discover and discuss your favorite films,\n movies, and shows</string>
+    <string name="let_s_get_started">Let\'s get started!</string>
+    <string name="image">Image</string>
 </resources>
