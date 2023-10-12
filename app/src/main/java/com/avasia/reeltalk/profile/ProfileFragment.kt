@@ -29,6 +29,7 @@ class ProfileFragment: Fragment() {
             ActivityResultContracts.PickVisualMedia()
         ) { uri ->
             binding.profileImage.setImageURI(uri)
+            binding.initial.text = ""
             if (uri != null) {
                 Log.d("PhotoPicker", "Selected URI: $uri")
             } else {
