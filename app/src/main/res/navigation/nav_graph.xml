@@ -28,7 +28,7 @@
     </fragment>
     <fragment
         android:id="@+id/welcomeDetailsFragment"
-        android:name="com.avasia.reeltalk.welcomescreens.WelcomeDetailsFragment"
+        android:name="com.avasia.reeltalk.welcomescreens.welcomepages.welcomedetails.WelcomeDetailsFragment"
         android:label="WelcomeDetailsFragment" >
         <action
             android:id="@+id/action_welcomeDetailsFragment_to_profileFragment"

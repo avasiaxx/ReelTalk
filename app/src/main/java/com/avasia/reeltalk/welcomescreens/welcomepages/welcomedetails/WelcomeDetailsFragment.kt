@@ -1,4 +1,4 @@
-package com.avasia.reeltalk.welcomescreens
+package com.avasia.reeltalk.welcomescreens.welcomepages.welcomedetails
 
 import android.os.Bundle
 import android.text.Spannable

@@ -5,10 +5,13 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.activityViewModels
 import com.avasia.reeltalk.R
 import com.avasia.reeltalk.databinding.FragmentWelcomePageBinding
 
 class WelcomePageFragment(private val position: Int): Fragment() {
+
+    private val welcomePageViewModel: WelcomePageViewModel by activityViewModels()
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -22,38 +25,10 @@ class WelcomePageFragment(private val position: Int): Fragment() {
         val binding = FragmentWelcomePageBinding.bind(view)
         setFragmentDetails(binding)
     }
-    private fun setFragmentDetails(binding: FragmentWelcomePageBinding){
-        when (position) {
-            0 -> setPage1(binding)
-            1 -> setPage2(binding)
-            2 -> setPage3(binding)
-    }
-}
 
-    private fun setPage1(binding: FragmentWelcomePageBinding){
-        binding.imageView.setImageResource(
-            R.drawable.illustration1
-        )
-        binding.textView2.text = resources.getString(
-            R.string.welcome_to_reel_talk_a_community_designed_for_true_film_and_tv_show_fans
-        )
-    }
-
-    private fun setPage2(binding: FragmentWelcomePageBinding){
-        binding.imageView.setImageResource(
-            R.drawable.illustration2
-        )
-        binding.textView2.text = resources.getString(
-            R.string.discover_and_discuss_your_favorite_films_n_movies_and_shows
-        )
-    }
-
-    private fun setPage3(binding: FragmentWelcomePageBinding){
-        binding.imageView.setImageResource(
-            R.drawable.illustration3
-        )
-        binding.textView2.text = resources.getString(
-            R.string.let_s_get_started
-        )
+    private fun setFragmentDetails(binding: FragmentWelcomePageBinding) {
+        val (image, text) = welcomePageViewModel.getPageDetails()[position]
+        binding.imageView.setImageResource(image)
+        binding.textView2.text = resources.getString(text)
     }
 }
