@@ -20,7 +20,7 @@ import com.tbuonomo.viewpagerdotsindicator.WormDotsIndicator
  * Users can effortlessly navigate through images and their descriptions with the assistance
  * of a dot indicator at the screen's bottom.
  */
-class WelcomeDetailsFragment: Fragment(R.layout.fragment_welcome_details) {
+class WelcomeDetailsFragment : Fragment(R.layout.fragment_welcome_details) {
 
     private var _binding: FragmentWelcomeDetailsBinding? = null
     private val binding get() = _binding!!
@@ -37,6 +37,7 @@ class WelcomeDetailsFragment: Fragment(R.layout.fragment_welcome_details) {
         dotsIndicator.attachTo(viewPager2)
         return view
     }
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(
             view,
@@ -49,18 +50,19 @@ class WelcomeDetailsFragment: Fragment(R.layout.fragment_welcome_details) {
         val continueBtn = binding.continueBtn
         viewPager2.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
             override fun onPageSelected(position: Int) {
-                if(position == LAST_FRAGMENT){
+                if (position == LAST_FRAGMENT) {
                     continueBtn.visibility = View.VISIBLE
-                }else{
+                } else {
                     continueBtn.visibility = View.GONE
                 }
             }
         })
-        continueBtn.setOnClickListener{
+        continueBtn.setOnClickListener {
             findNavController().navigate(R.id.profileFragment)
         }
     }
-    private fun findLoginPosition(inputString: String): Pair<Int, Int>?{
+
+    private fun findLoginPosition(inputString: String): Pair<Int, Int>? {
         val startIndex = inputString.indexOf("Login")
         val endIndex = startIndex + "Login".length
 
@@ -71,7 +73,7 @@ class WelcomeDetailsFragment: Fragment(R.layout.fragment_welcome_details) {
         }
     }
 
-    private fun findPositionBeforeLogin(inputString: String): Int?{
+    private fun findPositionBeforeLogin(inputString: String): Int? {
         val loginIndex = inputString.indexOf("Login")
         return if (loginIndex > 0) {
             loginIndex - 1
@@ -98,8 +100,8 @@ class WelcomeDetailsFragment: Fragment(R.layout.fragment_welcome_details) {
 
         val spannable = SpannableStringBuilder(loginString)
         val beforeLoginResult = findPositionBeforeLogin(loginString)
-        if(beforeLoginResult != null){
-            val (start,end) = Pair(START, beforeLoginResult)
+        if (beforeLoginResult != null) {
+            val (start, end) = Pair(START, beforeLoginResult)
             spannable.setSpan(
                 colorSpan1,
                 start,
@@ -108,7 +110,7 @@ class WelcomeDetailsFragment: Fragment(R.layout.fragment_welcome_details) {
             )
         }
         val loginResult = findLoginPosition(loginString)
-        if(loginResult!= null){
+        if (loginResult != null) {
             val (start, end) = loginResult
             spannable.setSpan(
                 colorSpan2,
@@ -124,6 +126,7 @@ class WelcomeDetailsFragment: Fragment(R.layout.fragment_welcome_details) {
         super.onDestroyView()
         _binding = null
     }
+
     companion object {
         private const val START = 0
         private const val LAST_FRAGMENT = 2

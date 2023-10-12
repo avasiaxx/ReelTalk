@@ -9,7 +9,7 @@ import androidx.fragment.app.activityViewModels
 import com.avasia.reeltalk.R
 import com.avasia.reeltalk.databinding.FragmentWelcomePageBinding
 
-class WelcomePageFragment(private val position: Int): Fragment() {
+class WelcomePageFragment(private val position: Int) : Fragment() {
 
     private val welcomePageViewModel: WelcomePageViewModel by activityViewModels()
     override fun onCreateView(

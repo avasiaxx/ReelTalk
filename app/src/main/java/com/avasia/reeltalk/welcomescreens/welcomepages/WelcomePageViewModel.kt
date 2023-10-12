@@ -9,7 +9,7 @@ import com.avasia.reeltalk.R
  * This ViewModel provides methods to retrieve details for each page of a welcome screen.
  */
 
-class WelcomePageViewModel: ViewModel() {
+class WelcomePageViewModel : ViewModel() {
     /**
      * Retrieves a list of pairs, each containing resource identifiers for an illustration (image)
      * and a string resource for a welcome message text specific to different pages of a welcome screen.
@@ -26,10 +26,12 @@ class WelcomePageViewModel: ViewModel() {
                 R.drawable.illustration1,
                 R.string.welcome_to_reel_talk
             ),
-            Pair(R.drawable.illustration2,
+            Pair(
+                R.drawable.illustration2,
                 R.string.discover_and_discuss
             ),
-            Pair(R.drawable.illustration3,
+            Pair(
+                R.drawable.illustration3,
                 R.string.let_s_get_started
             )
         )
