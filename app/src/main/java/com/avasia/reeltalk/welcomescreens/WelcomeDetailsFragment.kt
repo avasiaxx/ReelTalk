@@ -15,9 +15,11 @@ import com.avasia.reeltalk.R
 import com.avasia.reeltalk.databinding.FragmentWelcomeDetailsBinding
 import com.tbuonomo.viewpagerdotsindicator.WormDotsIndicator
 
-/* This fragment displays a series of image fragments with associated descriptions in a ViewPager.
- * Users can swipe through the images and descriptions, and a dot indicator at the bottom of the
- * screen helps navigate between fragments. */
+/**
+ * This fragment utilizes a ViewPager to showcase images and their respective descriptions.
+ * Users can effortlessly navigate through images and their descriptions with the assistance
+ * of a dot indicator at the screen's bottom.
+ */
 class WelcomeDetailsFragment: Fragment(R.layout.fragment_welcome_details) {
 
     override fun onCreateView(
