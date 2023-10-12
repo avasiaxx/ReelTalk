@@ -17,7 +17,7 @@
         android:layout_marginTop="70dp"/>
 
     <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/image"
+        android:id="@+id/profileImage"
         app:civ_border_width="0dp"
         android:layout_centerInParent="true"
         android:src="@drawable/baseline_circle_24"
@@ -32,8 +32,8 @@
     <de.hdodenhof.circleimageview.CircleImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="@+id/image"
-        app:layout_constraintEnd_toEndOf="@+id/image"
+        app:layout_constraintBottom_toBottomOf="@+id/profileImage"
+        app:layout_constraintEnd_toEndOf="@+id/profileImage"
         android:layout_centerInParent="true"
         android:src="@drawable/baseline_add_circle_24"
         app:civ_border_width="0dp"
@@ -45,17 +45,17 @@
         android:layout_height="wrap_content"
         android:text="@string/k"
         android:textAppearance="@style/TitleH1"
-        app:layout_constraintStart_toStartOf="@+id/image"
-        app:layout_constraintEnd_toEndOf="@id/image"
-        app:layout_constraintTop_toTopOf="@id/image"
-        app:layout_constraintBottom_toBottomOf="@id/image"/>
+        app:layout_constraintStart_toStartOf="@+id/profileImage"
+        app:layout_constraintEnd_toEndOf="@id/profileImage"
+        app:layout_constraintTop_toTopOf="@id/profileImage"
+        app:layout_constraintBottom_toBottomOf="@id/profileImage"/>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/displayName"
         android:layout_marginTop="40dp"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/image"
+        app:layout_constraintTop_toBottomOf="@+id/profileImage"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:hint="@string/display_name">

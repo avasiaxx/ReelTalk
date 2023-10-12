@@ -22,6 +22,8 @@ import com.tbuonomo.viewpagerdotsindicator.WormDotsIndicator
  */
 class WelcomeDetailsFragment: Fragment(R.layout.fragment_welcome_details) {
 
+    private var _binding: FragmentWelcomeDetailsBinding? = null
+    private val binding get() = _binding!!
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -40,7 +42,7 @@ class WelcomeDetailsFragment: Fragment(R.layout.fragment_welcome_details) {
             view,
             savedInstanceState
         )
-        val binding = FragmentWelcomeDetailsBinding.bind(view)
+        _binding = FragmentWelcomeDetailsBinding.bind(view)
         binding.login.text = formatLoginString(binding)
 
         val viewPager2 = binding.viewpager
@@ -116,6 +118,11 @@ class WelcomeDetailsFragment: Fragment(R.layout.fragment_welcome_details) {
             )
         }
         return spannable
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
     companion object {
         private const val START = 0
