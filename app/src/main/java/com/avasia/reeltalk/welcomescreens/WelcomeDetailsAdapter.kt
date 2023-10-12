@@ -10,8 +10,7 @@ class WelcomeDetailsAdapter (fragment: Fragment) : FragmentStateAdapter(fragment
     override fun getItemCount(): Int {
         return 3 // Number of fragments
     }
-
-    //Load fragment depending on position
+    //TODO Use a list from a lazy global variable to get rid of the when statement and use the index
     override fun createFragment(position: Int): Fragment {
         return when (position) {
             0 -> WelcomePage1Fragment()

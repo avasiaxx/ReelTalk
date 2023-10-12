@@ -18,8 +18,6 @@ class InitialWelcomeFragment: Fragment() {
     ): View? {
         return inflater.inflate(R.layout.fragment_welcome_screen, container, false)
     }
-
-    //Delay then navigate to next fragment
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         Handler(Looper.getMainLooper()).postDelayed({

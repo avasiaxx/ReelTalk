@@ -7,6 +7,8 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.avasia.reeltalk.R
 
+
+//TODO Pass Layouts through to inflate
 class WelcomePage1Fragment: Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater,

@@ -15,6 +15,9 @@ import com.avasia.reeltalk.R
 import com.avasia.reeltalk.databinding.FragmentWelcomeDetailsBinding
 import com.tbuonomo.viewpagerdotsindicator.WormDotsIndicator
 
+/* This fragment displays a series of image fragments with associated descriptions in a ViewPager.
+ * Users can swipe through the images and descriptions, and a dot indicator at the bottom of the
+ * screen helps navigate between fragments. */
 class WelcomeDetailsFragment: Fragment(R.layout.fragment_welcome_details) {
 
     override fun onCreateView(
@@ -22,7 +25,6 @@ class WelcomeDetailsFragment: Fragment(R.layout.fragment_welcome_details) {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        //Bind the viewpager to it's adapter & dot indicator
         val view = inflater.inflate(R.layout.fragment_welcome_details, container, false)
         val viewPager2 = view.findViewById<ViewPager2>(R.id.viewpager)
         val adapter = WelcomeDetailsAdapter(this)
@@ -36,12 +38,45 @@ class WelcomeDetailsFragment: Fragment(R.layout.fragment_welcome_details) {
             view,
             savedInstanceState
         )
-
         val binding = FragmentWelcomeDetailsBinding.bind(view)
+        binding.login.text = formatLoginString(binding)
 
-        /* Get the login textview string, format it with the correct color palette using
-        ForegroundColorSpans & a spannableStringBuilder */
+        val viewPager2 = binding.viewpager
+        val continueBtn = binding.continueBtn
+        viewPager2.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
+            override fun onPageSelected(position: Int) {
+                if(position == LAST_FRAGMENT){
+                    continueBtn.visibility = View.VISIBLE
+                }else{
+                    continueBtn.visibility = View.GONE
+                }
+            }
+        })
+        continueBtn.setOnClickListener{
+            findNavController().navigate(R.id.profileFragment)
+        }
+    }
+    private fun findLoginPosition(inputString: String): Pair<Int, Int>?{
+        val startIndex = inputString.indexOf("Login")
+        val endIndex = startIndex + "Login".length
 
+        return if (startIndex >= 0) {
+            Pair(startIndex, endIndex)
+        } else {
+            null
+        }
+    }
+
+    private fun findPositionBeforeLogin(inputString: String): Int?{
+        val loginIndex = inputString.indexOf("Login")
+        return if (loginIndex > 0) {
+            loginIndex - 1
+        } else {
+            null
+        }
+    }
+
+    private fun formatLoginString(binding: FragmentWelcomeDetailsBinding): SpannableStringBuilder {
         val loginString: String =
             binding.root.context.resources.getString(
                 R.string.already_have_an_account_login
@@ -56,37 +91,32 @@ class WelcomeDetailsFragment: Fragment(R.layout.fragment_welcome_details) {
                 binding.root.context, R.color.colorPrimary
             )
         )
+
         val spannable = SpannableStringBuilder(loginString)
-        spannable.setSpan(
-            colorSpan1,
-            0,
-            24,
-            Spannable.SPAN_EXCLUSIVE_EXCLUSIVE
-        )
-        spannable.setSpan(
-            colorSpan2,
-            25,
-            30,
-            Spannable.SPAN_EXCLUSIVE_EXCLUSIVE
-        )
-        binding.login.text = spannable
-
-
-        //Set the visibility of the Continue Button depending on if the third fragment is selected
-        val viewPager2 = binding.viewpager
-        val continueBtn = binding.continueBtn
-        viewPager2.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
-            override fun onPageSelected(position: Int) {
-                if(position == 2){
-                    continueBtn.visibility = View.VISIBLE
-                }else{
-                    continueBtn.visibility = View.GONE
-                }
-            }
-        })
-
-        continueBtn.setOnClickListener{
-            findNavController().navigate(R.id.profileFragment)
+        val beforeLoginResult = findPositionBeforeLogin(loginString)
+        if(beforeLoginResult != null){
+            val (start,end) = Pair(START, beforeLoginResult)
+            spannable.setSpan(
+                colorSpan1,
+                start,
+                end,
+                Spannable.SPAN_EXCLUSIVE_EXCLUSIVE
+            )
         }
+        val loginResult = findLoginPosition(loginString)
+        if(loginResult!= null){
+            val (start, end) = loginResult
+            spannable.setSpan(
+                colorSpan2,
+                start,
+                end,
+                Spannable.SPAN_EXCLUSIVE_EXCLUSIVE
+            )
+        }
+        return spannable
+    }
+    companion object {
+        private const val START = 0
+        private const val LAST_FRAGMENT = 2
     }
 }
