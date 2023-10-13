@@ -24,6 +24,21 @@ import java.util.Date
 import java.util.Locale
 import java.util.TimeZone
 
+/**
+ * Fragment for user profile settings.
+ *
+ * This fragment is responsible for allowing the user to manage their profile information. It provides
+ * functionality to select a profile picture, set a display name, and choose their birthday.
+ *
+ * Users can customize their profile details to personalize their experience within the app. The ability
+ * to upload a profile picture, set a display name, and specify their birthday offers a more engaging
+ * and personalized user experience. These details can be used for user identification, personalization,
+ * and social interactions within the app.
+ *
+ * Usage:
+ * - Use this fragment as part of a user profile setup.
+ * - Implement functionality to handle profile picture selection, display name input, and birthday selection.
+ */
 class ProfileFragment : Fragment() {
 
     private lateinit var pickMedia: ActivityResultLauncher<PickVisualMediaRequest?>
