@@ -9,6 +9,7 @@ import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.PickVisualMediaRequest
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import com.avasia.reeltalk.R
 import com.avasia.reeltalk.databinding.FragmentProfileBinding
@@ -48,6 +49,7 @@ class ProfileFragment : Fragment() {
 
     private var selectedDate: Long = 0
 
+    private val profileViewModel: ProfileViewModel by activityViewModels()
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -131,6 +133,7 @@ class ProfileFragment : Fragment() {
 
         binding.continueBtn.setOnClickListener {
             findNavController().navigate(R.id.pushNotificationFragment)
+            profileViewModel.setDisplayName(binding.nameInput.text.toString())
         }
     }
 

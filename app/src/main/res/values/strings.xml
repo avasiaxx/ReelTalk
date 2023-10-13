@@ -21,6 +21,6 @@
     <string name="you_can_turn_it_off">You can turn it off anytime in the system\n notification settings.</string>
     <string name="turn_off_notifications">Turn off notifications</string>
     <string name="not_now">Not now</string>
-    <string name="welcome_karl">Welcome, Karl!</string>
+    <string name="welcome_user">Welcome</string>
     <string name="let_s_get_to_know_you_better">Let\'s get to know you better and\n personalize your experience!</string>
 </resources>
