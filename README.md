@@ -100,7 +100,7 @@ dependencies {
 }
 ```
 
-##Getting Started
+## Getting Started
 To get started with Reel Talk Android Developer Intern Challenge, follow these steps:
 
 Clone or download the project from the repository URL.
