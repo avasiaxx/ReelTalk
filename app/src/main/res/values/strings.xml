@@ -15,4 +15,10 @@
     <string name="your_birthday">Your birthday</string>
     <string name="your_birthday_will_be_used_to_tailor_our_content_for_you_n_it_won_t_be_shared_with_any_third_parties">Your birthday will be used to tailor our content for you.\n It won\'t be shared with any third parties.</string>
     <string name="k">K</string>
+    <string name="turn_on_push_n_notifications">Turn on push\n notifications</string>
+    <string name="stay_in_the_loop_with_fellow_enthusiasts_in_n_discussions">Stay in the loop with fellow enthusiasts in\n discussions.</string>
+    <string name="get_instant_alerts_on_upcoming_movies">Get instant alerts on upcoming movies,\n fan-favorite recommendations, and\n exciting movie events</string>
+    <string name="you_can_turn_it_off">You can turn it off anytime in the system\n notification settings.</string>
+    <string name="turn_off_notifications">Turn off notifications</string>
+    <string name="not_now">Not now</string>
 </resources>

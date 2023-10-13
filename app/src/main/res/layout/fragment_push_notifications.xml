@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/turn_on_push_n_notifications"
+        style="@style/TitleH2"
+        android:textAlignment="center"
+        android:layout_marginTop="120dp"/>
+
+    <TextView
+        android:id="@+id/firstDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        android:text="@string/stay_in_the_loop_with_fellow_enthusiasts_in_n_discussions"
+        style="@style/Subheadline"
+        android:textAlignment="center"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/secondDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstDescription"
+        android:text="@string/get_instant_alerts_on_upcoming_movies"
+        style="@style/Subheadline"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/enableDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/secondDescription"
+        android:text="@string/you_can_turn_it_off"
+        android:textAlignment="center"
+        android:layout_marginTop="220dp"
+        style="@style/SmallText"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/turnOff"
+        style="@style/MaterialButtonStyle"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:padding="10dp"
+        android:text="@string/turn_off_notifications"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/enableDescription" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/notNow"
+        style="@style/MaterialButtonStyleTransparent"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:padding="10dp"
+        android:text="@string/not_now"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/turnOff" />
+</androidx.constraintlayout.widget.ConstraintLayout>

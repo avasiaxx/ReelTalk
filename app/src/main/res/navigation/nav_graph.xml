@@ -37,5 +37,13 @@
     <fragment
         android:id="@+id/profileFragment"
         android:name="com.avasia.reeltalk.profile.ProfileFragment"
-        android:label="ProfileFragment" />
+        android:label="ProfileFragment" >
+        <action
+            android:id="@+id/action_profileFragment_to_pushNotificationFragment"
+            app:destination="@id/pushNotificationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pushNotificationFragment"
+        android:name="com.avasia.reeltalk.pushnotificationprompt.PushNotificationFragment"
+        android:label="PushNotificationFragment" />
 </navigation>

@@ -58,7 +58,8 @@
         android:hint="@string/display_name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/profileImage">
+        app:layout_constraintTop_toBottomOf="@+id/profileImage"
+        app:startIconDrawable="@drawable/baseline_mode_24">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/nameInput"
@@ -88,7 +89,8 @@
         android:hint="@string/your_birthday"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nameTip">
+        app:layout_constraintTop_toBottomOf="@+id/nameTip"
+        app:startIconDrawable="@drawable/baseline_cake_24">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/birthdayInput"

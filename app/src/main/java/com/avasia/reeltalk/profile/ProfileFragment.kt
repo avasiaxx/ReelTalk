@@ -9,6 +9,8 @@ import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.PickVisualMediaRequest
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
+import com.avasia.reeltalk.R
 import com.avasia.reeltalk.databinding.FragmentProfileBinding
 import com.google.android.material.datepicker.CalendarConstraints
 import com.google.android.material.datepicker.CompositeDateValidator
@@ -110,6 +112,10 @@ class ProfileFragment : Fragment() {
             val date = Date(selectedDate + offsetFromUTC)
 
             binding.birthdayInput.setText(simpleFormat.format(date))
+        }
+
+        binding.continueBtn.setOnClickListener {
+            findNavController().navigate(R.id.pushNotificationFragment)
         }
     }
 
