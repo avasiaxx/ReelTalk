@@ -31,7 +31,7 @@ android {
 }
 ```
 
-##Default Configuration
+## Default Configuration
 The default configuration includes the application ID, version information, and test instrumentation runner. The application ID and version details can be modified according to your app's requirements.
 ```gradle
 defaultConfig {
@@ -42,7 +42,7 @@ defaultConfig {
 }
 ```
 
-##Build Features
+## Build Features
 ViewBinding is enabled for this project.
 ```gradle
 android {
@@ -52,7 +52,7 @@ android {
 }
 ```
 
-##Build Types
+## Build Types
 The release build type is configured to disable minification (proguard).
 ```gradle
 android {
@@ -68,7 +68,7 @@ android {
 }
 ```
 
-##Compile and Kotlin Options
+## Compile and Kotlin Options
 The project's compile and Kotlin options are configured as follows:
 ```gradle
 android {
@@ -82,7 +82,7 @@ android {
     }
 }
 ```
-##Dependencies
+## Dependencies
 The project includes various dependencies, including AndroidX libraries, testing frameworks, Android Navigation components, ViewPager2, Dot Indicator, and Circle Image View.
 
 Implementation Dependencies
