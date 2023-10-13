@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Reel Talk Android Developer Intern Challenge is an Android application designed for [brief description of the app's purpose]. This README provides an overview of the project's Gradle setup.
+Reel Talk Android Developer Intern Challenge is an Android application designed for [a potential intern position]. This README provides an overview of the project's Gradle setup.
 
 ## Gradle Configuration
 
