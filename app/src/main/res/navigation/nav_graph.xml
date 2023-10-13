@@ -45,5 +45,13 @@
     <fragment
         android:id="@+id/pushNotificationFragment"
         android:name="com.avasia.reeltalk.pushnotificationprompt.PushNotificationFragment"
-        android:label="PushNotificationFragment" />
+        android:label="PushNotificationFragment" >
+        <action
+            android:id="@+id/action_pushNotificationFragment_to_welcomeUserFragment"
+            app:destination="@id/welcomeUserFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/welcomeUserFragment"
+        android:name="com.avasia.reeltalk.welcomescreens.welcomeuser.WelcomeUserFragment"
+        android:label="WelcomeUserFragment" />
 </navigation>

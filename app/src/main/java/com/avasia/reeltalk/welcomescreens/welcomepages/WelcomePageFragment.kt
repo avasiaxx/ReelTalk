@@ -9,6 +9,14 @@ import androidx.fragment.app.activityViewModels
 import com.avasia.reeltalk.R
 import com.avasia.reeltalk.databinding.FragmentWelcomePageBinding
 
+/**
+ * Fragment for displaying a welcome page with image and text.
+ *
+ * This Fragment is used to present a specific welcome page to the user, including an image and text
+ * content.
+ *
+ * @param position The position of this page within the onboarding sequence.
+ */
 class WelcomePageFragment(private val position: Int) : Fragment() {
 
     private val welcomePageViewModel: WelcomePageViewModel by activityViewModels()
