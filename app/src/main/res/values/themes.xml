@@ -77,11 +77,19 @@
 
     <style name="MaterialButtonStyleDisabled" parent="Widget.MaterialComponents.Button.UnelevatedButton">
         <item name="backgroundTint">@color/color_states_materialbutton</item>
+        <item name="android:textColor">@color/disabled</item>
     </style>
 
     <style name= "MaterialButtonStyleTransparent" parent="Widget.MaterialComponents.Button.UnelevatedButton">
         <item name="android:backgroundTint">@color/secondSurface</item>
         <item name="android:textColor">@color/highEmphasis</item>
         <item name="android:textAppearance">@style/Headline</item>
+    </style>
+
+    <!-- Custom style for Chips -->
+    <style name= "ChipStyle" parent="Widget.MaterialComponents.Chip.Choice">
+        <item name="android:textAppearance">@style/Headline</item>
+        <item name="android:backgroundTint">@color/thirdSurface</item>
+        <item name="android:textColor">@color/highEmphasis</item>
     </style>
 </resources>

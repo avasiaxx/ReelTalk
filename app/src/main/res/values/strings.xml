@@ -23,4 +23,6 @@
     <string name="not_now">Not now</string>
     <string name="welcome_user">Welcome</string>
     <string name="let_s_get_to_know_you_better">Let\'s get to know you better and\n personalize your experience!</string>
+    <string name="select_your_top_3">Select your top 3 genres for\n movies and TV</string>
+    <string name="_0_3_selected">0/3 selected</string>
 </resources>

@@ -6,6 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
+import androidx.navigation.fragment.findNavController
+import com.avasia.reeltalk.R
 import com.avasia.reeltalk.databinding.FragmentWelcomeUserBinding
 import com.avasia.reeltalk.profile.ProfileViewModel
 
@@ -41,5 +43,8 @@ class WelcomeUserFragment : Fragment() {
             ", $displayName!"
         )
         binding.title.text = stringBuilder.toString()
+        binding.continueBtn.setOnClickListener {
+            findNavController().navigate(R.id.selectionScreenFragment)
+        }
     }
 }

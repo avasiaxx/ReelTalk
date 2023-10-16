@@ -33,6 +33,7 @@ class WelcomeDetailsFragment : Fragment(R.layout.fragment_welcome_details) {
         val viewPager2 = view.findViewById<ViewPager2>(R.id.viewpager)
         val adapter = WelcomeDetailsAdapter(this)
         val dotsIndicator = view.findViewById<WormDotsIndicator>(R.id.dots_indicator)
+        _binding = FragmentWelcomeDetailsBinding.bind(view)
         viewPager2.adapter = adapter
         dotsIndicator.attachTo(viewPager2)
         return view
@@ -43,7 +44,6 @@ class WelcomeDetailsFragment : Fragment(R.layout.fragment_welcome_details) {
             view,
             savedInstanceState
         )
-        _binding = FragmentWelcomeDetailsBinding.bind(view)
         binding.login.text = formatLoginString(binding)
 
         val viewPager2 = binding.viewpager

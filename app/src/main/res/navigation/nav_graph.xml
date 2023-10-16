@@ -53,5 +53,21 @@
     <fragment
         android:id="@+id/welcomeUserFragment"
         android:name="com.avasia.reeltalk.welcomescreens.welcomeuser.WelcomeUserFragment"
-        android:label="WelcomeUserFragment" />
+        android:label="WelcomeUserFragment" >
+        <action
+            android:id="@+id/action_welcomeUserFragment_to_selectionScreenFragment"
+            app:destination="@id/selectionScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectionScreenFragment"
+        android:name="com.avasia.reeltalk.selectionscreen.SelectionScreenFragment"
+        android:label="SelectionScreenFragment" >
+        <action
+            android:id="@+id/action_selectionScreenFragment_to_genreSelectionFragment"
+            app:destination="@id/genreSelectionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/genreSelectionFragment"
+        android:name="com.avasia.reeltalk.selectionscreen.selectionpages.genreselection.GenreSelectionFragment"
+        android:label="GenreSelectionFragment" />
 </navigation>
