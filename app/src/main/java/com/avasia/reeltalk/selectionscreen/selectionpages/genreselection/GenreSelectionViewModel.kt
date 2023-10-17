@@ -5,7 +5,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
 /**
- * ViewModel for managing genre selection in an Android application.
+ * ViewModel for managing genre selection.
  *
  * This ViewModel is responsible for managing the selection of genres. It keeps track of the
  * number of genres selected, enforces selection limits, and provides a list of available genre options.
