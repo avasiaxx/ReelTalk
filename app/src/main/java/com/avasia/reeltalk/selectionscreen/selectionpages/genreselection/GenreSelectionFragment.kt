@@ -14,7 +14,7 @@ import com.google.android.material.chip.ChipDrawable
 import com.google.android.material.chip.ChipGroup
 
 /**
- * Fragment for selecting genres using Chips in an Android application.
+ * Fragment for selecting genres using Chips.
  * This fragment allows users to choose from a list of genres presented as Chips.
  * The selected genres are displayed at the top, and unselected genres can be disabled.
  * It interacts with the `GenreSelectionViewModel` to manage selected genres and provides
