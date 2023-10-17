@@ -25,4 +25,8 @@
     <string name="let_s_get_to_know_you_better">Let\'s get to know you better and\n personalize your experience!</string>
     <string name="select_your_top_3">Select your top 3 genres for\n movies and TV</string>
     <string name="_0_3_selected">0/3 selected</string>
+    <string name="_0_5_selected">0/5 selected</string>
+    <string name="select_your_top_5_n_movies">Select your top 5\n movies</string>
+    <string name="search_to_add_more">Search to add more</string>
+    <string name="show_image">Show Image</string>
 </resources>
