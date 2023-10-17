@@ -12,7 +12,6 @@ class MovieTVSelectionAdapter : RecyclerView.Adapter<MovieTVSelectionAdapter.Vie
     private val values = mutableListOf<Movie>()
 
 
-
     inner class ViewHolder(
         private val binding: SelectionItemBinding
     ) : RecyclerView.ViewHolder(binding.root) {
