@@ -38,6 +38,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/selected" />
 
+    <com.google.android.material.search.SearchView
+        android:id="@+id/searchview"
+        android:layout_width="@id/search"
+        android:layout_height="@id/search"
+        app:layout_constraintEnd_toEndOf="@id/search"
+        app:layout_constraintStart_toStartOf="@id/search"
+        app:layout_constraintTop_toTopOf="@id/search" />
+
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerview"
         android:layout_width="match_parent"
@@ -46,4 +55,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/search" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

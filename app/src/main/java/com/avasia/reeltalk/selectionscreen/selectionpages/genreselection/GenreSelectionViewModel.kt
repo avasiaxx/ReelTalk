@@ -63,7 +63,7 @@ class GenreSelectionViewModel : ViewModel() {
      * Decreases the selected count if it is above the minimum limit.
      */
     fun onDecrease() {
-        if (_selected.value!! > 0) {
+        if (_selected.value!! > MIN_SELECTED) {
             _selected.value = _selected.value!! - 1
         }
     }

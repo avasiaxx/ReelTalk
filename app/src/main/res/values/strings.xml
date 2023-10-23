@@ -29,4 +29,12 @@
     <string name="select_your_top_5_n_movies">Select your top 5\n movies</string>
     <string name="search_to_add_more">Search to add more</string>
     <string name="show_image">Show Image</string>
+    <string name="checkmark_icon">Checkmark Icon</string>
+    <string name="keep_it_real_n_but_be_kind">Keep it real,\n but be kind</string>
+    <string name="end_text">Welcome, we\'re so excited to have you here!\n\n
+At Reel Talk, we believe that every individual brings something unique to our community. We are committed to fostering a safe and respectful environment for everyone to engage in exciting conversations.\n\n
+In our mission to encourage respect and belongingness, we ask that you join us by adhering to our guidelines. We take these guidelines seriously, and failure to adhere to them may result in being banned from our community. Thanks for your cooperation.\n\n
+With love,\n
+The Reel Talk Team</string>
+    <string name="i_agree">I agree</string>
 </resources>

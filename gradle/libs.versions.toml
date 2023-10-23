@@ -12,7 +12,7 @@ nav_version = "2.7.4"
 viewpager = "1.0.0"
 dotsindicator = "5.0"
 circleimageview = "3.1.0"
-
+lifecycle = "2.6.2"
 
 [libraries]
 core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
@@ -27,6 +27,8 @@ navigation-ui = { group = "androidx.navigation", name = "navigation-ui-ktx", ver
 viewpager2 = { group = "androidx.viewpager2", name = "viewpager2", version.ref = "viewpager"}
 dotsindicator = {group = "com.tbuonomo", name = "dotsindicator", version.ref = "dotsindicator"}
 circleimageview = {group = "de.hdodenhof", name = "circleimageview", version.ref = "circleimageview"}
+viewmodel = {group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref="lifecycle"}
+livedata = {group = "androidx.lifecycle", name = "lifecycle-livedata-ktx", version.ref="lifecycle"}
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }

@@ -70,4 +70,20 @@
         android:id="@+id/genreSelectionFragment"
         android:name="com.avasia.reeltalk.selectionscreen.selectionpages.genreselection.GenreSelectionFragment"
         android:label="GenreSelectionFragment" />
+    <fragment
+        android:id="@+id/tvSelectionFragment"
+        android:name="com.avasia.reeltalk.selectionscreen.selectionpages.tvshowselection.TvSelectionFragment"
+        android:label="TvSelectionFragment" />
+    <fragment
+        android:id="@+id/movieSelectionFragment"
+        android:name="com.avasia.reeltalk.selectionscreen.selectionpages.movieselection.MovieSelectionFragment"
+        android:label="MovieSelectionFragment" />
+    <fragment
+        android:id="@+id/welcomePageFragment"
+        android:name="com.avasia.reeltalk.welcomescreens.welcomepages.WelcomePageFragment"
+        android:label="WelcomePageFragment" />
+    <fragment
+        android:id="@+id/endScreenFragment"
+        android:name="com.avasia.reeltalk.endscreen.EndScreenFragment"
+        android:label="EndScreenFragment" />
 </navigation>

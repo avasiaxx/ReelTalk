@@ -1,22 +1,22 @@
 package com.avasia.reeltalk.selectionscreen
 
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentManager
+import androidx.lifecycle.Lifecycle
 import androidx.viewpager2.adapter.FragmentStateAdapter
-import com.avasia.reeltalk.selectionscreen.selectionpages.genreselection.GenreSelectionFragment
-import com.avasia.reeltalk.selectionscreen.selectionpages.movietvselection.MovieTVSelectionFragment
 
-class SelectionScreenAdapter(fragment: Fragment) : FragmentStateAdapter(fragment) {
+class SelectionScreenAdapter(
+    fragmentManager: FragmentManager,
+    lifecycle: Lifecycle,
+    private val pageCount: Int,
+    private val getPage: (Int) -> Fragment
+) : FragmentStateAdapter(fragmentManager, lifecycle) {
+
     override fun getItemCount(): Int {
-        return 3
+        return pageCount
     }
 
     override fun createFragment(position: Int): Fragment {
-       return when(position){
-            0 -> GenreSelectionFragment()
-            1 -> MovieTVSelectionFragment()
-           else -> {
-               GenreSelectionFragment()
-           }
-       }
+        return getPage(position)
     }
 }
