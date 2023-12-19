@@ -2,7 +2,9 @@
 
 ## Video Demo
 [Watch the Video Demo](https://youtu.be/rLXKNtQT9iY)
-[Reel Talk Update: 12/19/2023](https://www.youtube.com/watch?v=ZXsz6RXwwpA)
+
+##Reel Talk Update
+[Update: 12/19/2023](https://www.youtube.com/watch?v=ZXsz6RXwwpA)
 
 ## Introduction
 
